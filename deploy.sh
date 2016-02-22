@@ -2,6 +2,8 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+git clone git@github.com:ewok/ewok.github.io.git public
+
 # Build the project.
 hugo # if using a theme, replace by `hugo -t <yourtheme>`
 
@@ -9,7 +11,7 @@ hugo # if using a theme, replace by `hugo -t <yourtheme>`
 cd public
 
 # Add changes to git.
-git add -A
+git add --all :/
 
 # Commit changes.
 msg="rebuilding site `date`"
