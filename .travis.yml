@@ -1,0 +1,17 @@
+---
+language: go
+
+go:
+  - 1.5.2
+
+install: go get -v github.com/spf13/hugo
+
+script: ./deploy.sh
+
+branches:
+  only:
+  - master
+
+git:
+  depth: 3
+
