@@ -23,3 +23,6 @@ branches:
 git:
   depth: 3
 
+cache:
+  directories:
+  - $HOME/gopath
