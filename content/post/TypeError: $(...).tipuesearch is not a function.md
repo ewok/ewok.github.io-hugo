@@ -18,13 +18,15 @@
 
 Устанавливаем поиск по инструкции с сайта http://www.tipue.com/search/docs/. Но! Функция показа результатов должна быть такой:
 
-`<script>
+```
+<script>
 var $j = jQuery.noConflict();
 $j(document).ready(function() {
-     $j('# tipue_search_input').tipuesearch({
+     $j('#tipue_search_input').tipuesearch({
          'show': 10,
          'mode': 'json',
          'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
      });
 });
-</script>`
+</script>
+```
