@@ -19,6 +19,8 @@ script:
         git clone git@github.com:ewok/ewok.github.io.git public
         hugo -D
         cd public
+        git config --global user.email "ewok@ewok.ru"
+        git config --global user.name "Artur"
         git add --all :/
         msg="rebuilding site `date`"
         git commit -m "$msg"
