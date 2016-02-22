@@ -28,4 +28,5 @@ cache:
   - $HOME/gopath
 
 before_cache:
+    - cd $HOME
     - rm -rf $HOME/gopath/src/github.com/ewok
