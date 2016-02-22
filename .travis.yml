@@ -14,7 +14,16 @@ before_install:
 install:
     - go get -v github.com/spf13/hugo
 
-script: ./deploy.sh
+script:
+    - |
+        git clone git@github.com:ewok/ewok.github.io.git public
+        hugo
+        cd public
+        git add --all :/
+        msg="rebuilding site `date`"
+        git commit -m "$msg"
+        git push origin master
+        cd ..
 
 branches:
   only:
