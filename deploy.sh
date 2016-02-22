@@ -1,9 +1,5 @@
 #!/bin/bash
 
-eval "$(ssh-agent -s)" #start the ssh agent
-chmod 600 key.pem # this key should have push access
-ssh-add key.pem
-
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.

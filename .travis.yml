@@ -4,9 +4,15 @@ language: go
 go:
   - 1.5.2
 
+before_install:
+    - |
+      openssl aes-256-cbc -K $encrypted_88b8e944af1a_key -iv $encrypted_88b8e944af1a_iv -in key.pem.enc -out key.pem -d
+      eval "$(ssh-agent -s)" #start the ssh agent
+      chmod 600 key.pem # this key should have push access
+      ssh-add key.pem
+
 install:
     - go get -v github.com/spf13/hugo
-    - openssl aes-256-cbc -K $encrypted_88b8e944af1a_key -iv $encrypted_88b8e944af1a_iv -in key.pem.enc -out key.pem -d
 
 script: ./deploy.sh
 
