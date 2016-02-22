@@ -26,3 +26,6 @@ git:
 cache:
   directories:
   - $HOME/gopath
+
+before_cache:
+    - rm -rf $HOME/gopath/src/github.com/ewok
