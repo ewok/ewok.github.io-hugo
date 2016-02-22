@@ -1,0 +1,36 @@
+BaseUrl: "http://ewok.github.io"
+LanguageCode: "ru_RU"
+Title: "Записки Турыча"
+Theme: beg
+
+Params:
+  Author: "Artur Taranchiev"
+  DateForm: "Mon, Jan 2, 2006"
+  # GoogleAnalyticsUserID: "Your ID."
+  # Facebook: "Your ID."
+  Twitter: "ewokru"
+  Github: "ewok"
+  ShowRelatedPost: True
+  disqusShortname: "ewokru"
+  SyntaxHighlightTheme: "solarized_dark.min.css"
+
+Indexes:
+  tag: "tags"
+
+permalinks:
+    post: /:slug
+
+MetadataFormat: "yaml"
+
+menu:
+    main:
+      - Name: "github"
+        Pre: "<i class='fa fa-heart'></i>"
+        Weight: -110
+        Identifier: "github"
+        Url: "https://github.com/ewok"
+      - Name: "twitter"
+        Pre: "<i class='fa fa-road'></i>"
+        Weight: -100
+        Url: "https://twitter.com/ewokru"
+
