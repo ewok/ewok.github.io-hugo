@@ -12,5 +12,4 @@
     "title": "Django Reinhardt",
     "type": "post"
 }
-
-
+![](/images/2015/03/tumblr_ltjf2byplb1r0dj31o1_500.jpg)
