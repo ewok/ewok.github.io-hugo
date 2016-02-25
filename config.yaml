@@ -14,6 +14,7 @@ Params:
   disqusShortname: "ewokru"
   SyntaxHighlightTheme: "solarized_dark.min.css"
   GoogleCS: 018232319146837403043:ugnaw2yq0s8
+  YandexMetrika: "22971493"
 
 Indexes:
   tag: "tags"
