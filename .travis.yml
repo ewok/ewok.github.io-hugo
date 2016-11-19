@@ -2,7 +2,7 @@
 language: go
 
 go:
-  - 1.5.2
+  - 1.7
 
 before_install:
     - |
@@ -13,13 +13,9 @@ before_install:
 
 install:
     - go get -v github.com/spf13/hugo
-    - pip install virtualenv
 
 script:
     - |
-        virtualenv -p /usr/bin/python2.7 --system-site-packages env
-        source env/bin/activate
-        pip install -r requirements.txt
         git clone git@github.com:ewok/ewok.github.io.git public
         hugo
         cd public
@@ -27,15 +23,6 @@ script:
         git config --global user.name "Artur"
         git add --all :/
         msg="rebuilding site `date`"
-        git commit -m "$msg"
-        cd ../docs
-        mkdocs build --clean
-        cd ..
-        rm -rf public/docs
-        mv docs/site public/docs
-        cd public
-        git add --all :/
-        msg="rebuilding docs `date`"
         git commit -m "$msg"
         git push origin master
         cd ..
