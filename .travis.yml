@@ -13,6 +13,7 @@ before_install:
 
 install:
     - go get -v github.com/spf13/hugo
+    - pip install -r requirements.txt
 
 script:
     - |
@@ -23,6 +24,15 @@ script:
         git config --global user.name "Artur"
         git add --all :/
         msg="rebuilding site `date`"
+        git commit -m "$msg"
+        cd ../docs
+        mkdocs build --clean
+        cd ..
+        rm -rf public/docs
+        mv docs/site public/docs
+        cd public
+        git add --all :/
+        msg="rebuilding docs `date`"
         git commit -m "$msg"
         git push origin master
         cd ..

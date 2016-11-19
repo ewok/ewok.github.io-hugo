@@ -1,0 +1,6 @@
+site_name: ewoks notes
+pages:
+  - Home: index.md
+  - Devops:
+    - 'Elastic Search': "elk/index.md"
+theme: readthedocs
