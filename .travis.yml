@@ -13,6 +13,7 @@ before_install:
 
 install:
     - go get -v github.com/spf13/hugo
+    - pip install virtualenv
 
 script:
     - |
