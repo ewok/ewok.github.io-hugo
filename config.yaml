@@ -1,4 +1,4 @@
-BaseUrl: "http://ewok.github.io/"
+BaseUrl: "https://ewok.github.io/"
 LanguageCode: "ru_RU"
 Title: "Записки Турыча"
 Theme: beg
@@ -26,12 +26,16 @@ MetadataFormat: "yaml"
 
 menu:
     main:
-      - Name: "github"
+      - Name: "Docs"
+        Weight: -120
+        Identifier: "docs"
+        Url: "/docs"
+      - Name: "GitHub"
         Pre: "<i class='fa fa-heart'></i>"
         Weight: -110
         Identifier: "github"
         Url: "https://github.com/ewok"
-      - Name: "twitter"
+      - Name: "Twitter"
         Pre: "<i class='fa fa-road'></i>"
         Weight: -100
         Url: "https://twitter.com/ewokru"

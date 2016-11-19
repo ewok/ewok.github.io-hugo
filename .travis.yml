@@ -32,7 +32,7 @@ branches:
   - master
 
 git:
-  depth: 3
+  submodules: true
 
 cache:
   directories:
