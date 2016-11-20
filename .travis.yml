@@ -16,6 +16,7 @@ install:
 
 script:
     - |
+        rm -rf public
         git clone git@github.com:ewok/ewok.github.io.git public
         hugo
         cd public
@@ -33,6 +34,7 @@ branches:
 
 git:
   submodules: true
+  depth: 3
 
 cache:
   directories:
