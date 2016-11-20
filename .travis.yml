@@ -18,6 +18,7 @@ script:
     - |
         rm -rf public
         git clone git@github.com:ewok/ewok.github.io.git public
+        hugo version
         hugo --logFile public/log.txt --config config.yaml
         cd public
         git config --global user.email "ewok@ewok.ru"
