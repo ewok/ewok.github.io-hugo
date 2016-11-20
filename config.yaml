@@ -1,7 +1,7 @@
 baseurl: "https://ewok.github.io/"
 languagecode: "ru_RU"
 title: "Записки Турыча"
-theme: beg
+theme: beg_ewk
 
 disqusshortname: "ewokru"
 

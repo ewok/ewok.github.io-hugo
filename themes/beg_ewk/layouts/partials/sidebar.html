@@ -1,0 +1,40 @@
+
+<aside class="l-sidebar">
+
+  {{ if isset .Site.Params "googlecs" }}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Search</h2>
+    </div>
+    <div class="list-group">
+        <gcse:search>
+    </div>
+  </div>
+  {{ end }}
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      {{ range first 10 .Site.Pages }}
+      <a href="{{ .Permalink }}" class="list-group-item">{{ .Title }}</a>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ range $key, $value := .Site.Taxonomies }}
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">{{ $key | singularize | upper }}</div>
+    </div>
+    <div class="list-group">
+      {{ range first 10 $value.ByCount }}
+      <a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</aside>
+
