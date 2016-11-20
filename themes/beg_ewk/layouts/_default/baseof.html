@@ -79,7 +79,7 @@
 {{ if isset .Site.Params "googlecs" }}
 <script>
   (function() {
-      var cx = '{{ $.Site.Params.GoogleCS }}';
+      var cx = '{{ .Site.Params.googlecs }}';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;

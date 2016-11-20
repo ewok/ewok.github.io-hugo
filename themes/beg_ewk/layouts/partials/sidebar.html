@@ -4,11 +4,9 @@
   {{ if isset .Site.Params "googlecs" }}
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h2 class="panel-title">Search</h2>
+      <div class="panel-title">Search</div>
     </div>
-    <div class="list-group">
-        <gcse:search>
-    </div>
+        <gcse:search></gcse:search>
   </div>
   {{ end }}
 

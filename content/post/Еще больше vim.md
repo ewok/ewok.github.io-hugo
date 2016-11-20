@@ -13,8 +13,6 @@
     "title": "Еще больше vim",
     "type": "post"
 }
-
-
 Для тех кто хочет использовать vim в стиле vim way:
 
-[hardmode](https://github.com/wikitopian/hardmode) и [hardtime](https://github.com/takac/vim-hardtime)
+[hardmode](https://github.com/wikitopian/hardmode) и [hardtime](https://github.com/takac/vim-hardtime) <!--more-->
