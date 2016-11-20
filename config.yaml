@@ -1,20 +1,21 @@
-BaseUrl: "https://ewok.github.io/"
-LanguageCode: "ru_RU"
-Title: "Записки Турыча"
-Theme: beg
+baseurl: "https://ewok.github.io/"
+languagecode: "ru_RU"
+title: "Записки Турыча"
+theme: beg
+
+disqusshortname: "ewokru"
 
 Params:
-  Author: "Artur Taranchiev"
-  DateForm: "Mon, Jan 2, 2006"
+  author: "Artur Taranchiev"
+  dateform: "Mon, Jan 2, 2006"
   # GoogleAnalyticsUserID: "Your ID."
   # Facebook: "Your ID."
-  Twitter: "ewokru"
-  Github: "ewok"
-  ShowRelatedPost: True
-  disqusShortname: "ewokru"
-  SyntaxHighlightTheme: "solarized_dark.min.css"
-  GoogleCS: 018232319146837403043:ugnaw2yq0s8
-  YandexMetrika: "22971493"
+  twitter: "ewokru"
+  github: "ewok"
+  showRelatedpost: True
+  syntaxhighlighttheme: "solarized_dark.min.css"
+  googlecs: "018232319146837403043:ugnaw2yq0s8"
+  yandexmetrika: "22971493"
 
 Indexes:
   tag: "tags"
