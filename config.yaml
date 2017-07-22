@@ -27,10 +27,6 @@ MetadataFormat: "yaml"
 
 menu:
     main:
-      - Name: "Docs"
-        Weight: -120
-        Identifier: "docs"
-        Url: "/docs"
       - Name: "GitHub"
         Pre: "<i class='fa fa-heart'></i>"
         Weight: -110

@@ -1,4 +1,4 @@
 user-agent: *
 Disallow: /images/
 Allow: /
-Sitemap: https://ewok.github.io/sitemap.xml
+Sitemap: https://ewok.ru/sitemap.xml
